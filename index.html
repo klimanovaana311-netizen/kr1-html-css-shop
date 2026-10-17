@@ -3,104 +3,160 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Учебный пример небольшого каталога настольных ламп.">
-  <title>Lumen — настольные лампы</title>
+  <title>МебельДива — мастерская необычной мебели на заказ</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <a class="logo" href="index.html">Lumen</a>
-      <nav class="site-nav" aria-label="Основная навигация">
-        <ul class="site-nav__list">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><a href="contacts.html">Контакты</a></li>
-          <li><a href="#popular">Популярное</a></li>
-        </ul>
-      </nav>
-    </div>
+  <header>
+    <h1>МебельДива</h1>
+    <p class="subtitle">Мастерская необычной мебели на заказ</p>
   </header>
 
   <main>
+    <!-- Услуги -->
     <section class="hero">
-      <div class="container">
-        <h1>Настольные лампы для дома и работы</h1>
-        <p>Небольшой учебный каталог с примерами семантической разметки, карточки товара и формы заявки.</p>
-        <a class="button" href="catalog.html">Перейти в каталог</a>
+      <h2>Мебель, которой ещё не существует</h2>
+      <p>
+        Вы видели диван в виде гигантских ступней? А кресло из куска сыра?
+        Мы — мастерская «МебельДива» — делаем такую мебель на заказ.
+        Придумайте самый странный предмет интерьера — а мы воплотим его в жизнь.
+      </p>
+      <div class="services">
+        <div class="service-card">
+          <h3>🎨 Нестандартный дизайн</h3>
+          <p>Разработаем эскиз по вашей идее — от дивана-животного до стола-облака.</p>
+        </div>
+        <div class="service-card">
+          <h3>🔨 Изготовление на заказ</h3>
+          <p>Сделаем мебель из дерева, металла, кожи и неожиданных материалов.</p>
+        </div>
+        <div class="service-card">
+          <h3>🚚 Доставка и сборка</h3>
+          <p>Привезём и соберём даже самые громоздкие и хрупкие экспонаты.</p>
+        </div>
       </div>
     </section>
 
-    <section class="section" id="popular">
-      <div class="container">
-        <h2>Популярная модель</h2>
-        <article class="product-card">
-          <img class="product-card__image" src="images/lamp.svg" alt="Настольная лампа Lumen One">
-          <div class="product-card__content">
-            <h3 class="product-card__title">Lumen One</h3>
-            <p>Компактная настольная лампа с направленным светом для рабочего стола.</p>
-            <p class="product-card__price">3 490 ₽</p>
-            <button class="button" type="button" id="open-order-dialog">Оставить заявку</button>
-          </div>
+    <!-- Портфолио -->
+    <section class="gallery">
+      <h2>Наши работы</h2>
+      <p class="gallery-intro">Примеры мебели, которую мы уже сделали на заказ:</p>
+
+      <div class="gallery-grid">
+        <!-- 1 -->
+        <article class="item-card">
+          <img src="images/item-1.jpg" alt="Диван в виде гигантских ступней">
+          <h3>Диван «Босые ноги»</h3>
+          <p class="desc">Диван, который так и просится, чтобы вы с него не вставали. Создан для тех, кто ценит комфорт и не боится показать миру свои ступни.</p>
+          <p class="price">от 120 000 ₽</p>
+        </article>
+
+        <!-- 2 -->
+        <article class="item-card">
+          <img src="images/item-2.jpg" alt="Красное кресло на металлических ногах">
+          <h3>Кресло «Лыжник»</h3>
+          <p class="desc">Красное кресло с подлокотниками-столами на металлических ногах. Идеально для тех, кто не может усидеть на месте и всегда готов к спуску с горы.</p>
+          <p class="price">от 95 000 ₽</p>
+        </article>
+
+        <!-- 3 -->
+        <article class="item-card">
+          <img src="images/item-3.jpg" alt="Диван с тигриным окрасом и головой тигра">
+          <h3>Диван «Хищник»</h3>
+          <p class="desc">Бархатистый тигр, который притворяется диваном. Охраняет ваш покой и добавляет дикости в любую гостиную.</p>
+          <p class="price">от 210 000 ₽</p>
+        </article>
+
+        <!-- 4 -->
+        <article class="item-card">
+          <img src="images/item-4.jpg" alt="Желтое кресло в виде куска сыра">
+          <h3>Кресло «Чеддер»</h3>
+          <p class="desc">Аппетитное кресло из цельного куска сыра. Внимание: гости могут попытаться его откусить. Не рекомендуется для людей на диете.</p>
+          <p class="price">от 45 000 ₽</p>
+        </article>
+
+        <!-- 5 -->
+        <article class="item-card">
+          <img src="images/item-5.jpg" alt="Кровать в форме зигзага">
+          <h3>Кровать «Зигзаг удачи»</h3>
+          <p class="desc">Спальное место, которое ломает все стереотипы о сне. Говорят, на ней снятся самые запутанные, но яркие сны.</p>
+          <p class="price">от 150 000 ₽</p>
+        </article>
+
+        <!-- 6 -->
+        <article class="item-card">
+          <img src="images/item-6.jpg" alt="Кресло в виде гориллы">
+          <h3>Кресло «Горилла»</h3>
+          <p class="desc">Мягкое и надёжное убежище в объятиях могучей гориллы. Идеально для интровертов, которые хотят, чтобы их не трогали.</p>
+          <p class="price">от 180 000 ₽</p>
+        </article>
+
+        <!-- 7 -->
+        <article class="item-card">
+          <img src="images/item-7.jpg" alt="Красная тумба в виде оленя">
+          <h3>Тумба «Олень»</h3>
+          <p class="desc">Изящная тумба с двумя ящиками и встроенным торшером вместо рогов. Верный помощник в спальне, который никогда не убежит.</p>
+          <p class="price">от 65 000 ₽</p>
+        </article>
+
+        <!-- 8 -->
+        <article class="item-card">
+          <img src="images/item-8.jpg" alt="Синий столик в виде собаки">
+          <h3>Столик «Верный пёс»</h3>
+          <p class="desc">Синий пёс, готовый держать на своей спине всё, что угодно: от чашки кофе до будильника. Самый преданный предмет интерьера.</p>
+          <p class="price">от 38 000 ₽</p>
         </article>
       </div>
     </section>
 
-    <section class="section section--muted" id="advantages">
-      <div class="container">
-        <h2>Почему Lumen</h2>
-        <p>Простой дизайн, понятные характеристики и несколько базовых моделей без перегруженного каталога.</p>
+    <!-- Как мы работаем -->
+    <section class="process">
+      <h2>Как мы работаем</h2>
+      <div class="process-steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Заявка</h3>
+          <p>Вы описываете идею — мы обсуждаем детали и сроки.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Эскиз</h3>
+          <p>Готовим 3D-макет и согласовываем материалы.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Изготовление</h3>
+          <p>Собираем мебель вручную в нашей мастерской.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">4</span>
+          <h3>Доставка</h3>
+          <p>Привозим, собираем и удивляем ваших гостей.</p>
+        </div>
       </div>
+    </section>
+
+    <!-- Форма заявки -->
+    <section class="order">
+      <h2>Оставить заявку</h2>
+      <p>Опишите, какую необычную мебель вы хотите — и мы свяжемся с вами.</p>
+      <form class="order-form" action="#" method="post">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Анна" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="anna@example.com" required>
+
+        <label for="idea">Ваша идея</label>
+        <textarea id="idea" name="idea" rows="4" placeholder="Хочу кресло в виде облака..." required></textarea>
+
+        <button type="submit">Отправить заявку</button>
+      </form>
     </section>
   </main>
 
-  <footer class="site-footer" id="contacts">
-    <div class="container">
-      <p>Учебный проект Lumen</p>
-    </div>
+  <footer>
+    <p>&copy; 2026 Мастерская «МебельДива». Все права защищены.</p>
   </footer>
-
-  <dialog class="order-dialog" id="order-dialog">
-    <form class="order-form" id="order-form" action="#" method="post">
-      <h2>Заявка на Lumen One</h2>
-
-      <label for="order-name">Имя</label>
-      <input id="order-name" name="name" type="text" minlength="2" maxlength="50" autocomplete="name" required>
-
-      <label for="order-email">E-mail</label>
-      <input id="order-email" name="email" type="email" placeholder="name@example.ru" autocomplete="email" required>
-
-      <label for="order-phone">Телефон</label>
-      <input id="order-phone" name="phone" type="tel" inputmode="tel" placeholder="+7 900 000-00-00" pattern="\+7[0-9]{10}" autocomplete="tel" required>
-
-      <label for="order-model">Модель</label>
-      <select id="order-model" name="model" required>
-        <option value="">Выберите модель</option>
-        <option value="lumen-one">Lumen One</option>
-      </select>
-
-      <label for="order-date">Желаемая дата связи</label>
-      <input id="order-date" name="contact-date" type="date">
-
-      <input name="source" type="hidden" value="main-page">
-
-      <label for="order-comment">Комментарий</label>
-      <textarea id="order-comment" name="comment" rows="4" maxlength="300" placeholder="Дополнительная информация"></textarea>
-
-      <label class="checkbox-label" for="order-agreement">
-        <input id="order-agreement" name="agreement" type="checkbox" required>
-        Согласен на обработку данных
-      </label>
-
-      <p class="form-message" id="form-message" hidden>Заявка отправлена.</p>
-
-      <div class="form-actions">
-        <button class="button" type="submit">Отправить</button>
-        <button class="button button--secondary" type="button" id="close-order-dialog">Закрыть</button>
-      </div>
-    </form>
-  </dialog>
-
-  <script src="js/main.js"></script>
 </body>
 </html>
