@@ -3,28 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>МебельДива — мастерская необычной мебели на заказ</title>
+  <title>МебельДива — Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="#" class="logo">МебельДива</a>
+      <a href="index.html" class="logo">МебельДива</a>
       <p class="subtitle">Мастерская необычной мебели на заказ</p>
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li><a href="index.html" class="active">Главная</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="contacts.html">Контакты</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
   <main>
-    <!-- Услуги -->
-    <section class="hero">
+    <section class="hero" style="padding: 80px 0;">
       <div class="container">
         <h2>Мебель, которой ещё не существует</h2>
-        <p>
+        <p style="margin-bottom: 30px;">
           Вы видели диван в виде гигантских ступней? А кресло из куска сыра?
           Мы — мастерская «МебельДива» — делаем такую мебель на заказ.
           Придумайте самый странный предмет интерьера — а мы воплотим его в жизнь.
         </p>
-        
+        <a href="catalog.html" class="button" style="display: inline-block; padding: 12px 24px; background: var(--color-primary); color: white; text-decoration: none; border-radius: var(--radius); font-weight: bold;">Смотреть наши работы</a>
+      </div>
+    </section>
+
+    <section class="section section--muted">
+      <div class="container">
+        <h2>Почему выбирают нас</h2>
         <div class="services">
           <div class="service-card">
             <h3>🎨 Нестандартный дизайн</h3>
@@ -39,130 +51,6 @@
             <p>Привезём и соберём даже самые громоздкие и хрупкие экспонаты.</p>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- Портфолио -->
-    <section class="section">
-      <div class="container">
-        <h2>Наши работы</h2>
-        <p class="gallery-intro">Примеры мебели, которую мы уже сделали на заказ:</p>
-
-        <div class="gallery-grid">
-          <!-- 1 -->
-          <article class="item-card">
-            <img src="images/item-1.jpg" alt="Диван в виде гигантских ступней">
-            <h3>Диван «Босые ноги»</h3>
-            <p class="desc">Диван, который так и просится, чтобы вы с него не вставали. Создан для тех, кто ценит комфорт и не боится показать миру свои ступни.</p>
-            <p class="price">от 120 000 ₽</p>
-          </article>
-
-          <!-- 2 -->
-          <article class="item-card">
-            <img src="images/item-2.jpg" alt="Красное кресло на металлических ногах">
-            <h3>Кресло «Лыжник»</h3>
-            <p class="desc">Красное кресло с подлокотниками-столами на металлических ногах. Идеально для тех, кто не может усидеть на месте.</p>
-            <p class="price">от 95 000 ₽</p>
-          </article>
-
-          <!-- 3 -->
-          <article class="item-card">
-            <img src="images/item-3.jpg" alt="Диван с тигриным окрасом и головой тигра">
-            <h3>Диван «Хищник»</h3>
-            <p class="desc">Бархатистый тигр, который притворяется диваном. Охраняет ваш покой и добавляет дикости в любую гостиную.</p>
-            <p class="price">от 210 000 ₽</p>
-          </article>
-
-          <!-- 4 -->
-          <article class="item-card">
-            <img src="images/item-4.jpg" alt="Желтое кресло в виде куска сыра">
-            <h3>Кресло «Чеддер»</h3>
-            <p class="desc">Аппетитное кресло из цельного куска сыра. Внимание: гости могут попытаться его откусить. Не рекомендуется для людей на диете.</p>
-            <p class="price">от 45 000 ₽</p>
-          </article>
-
-          <!-- 5 -->
-          <article class="item-card">
-            <img src="images/item-5.jpg" alt="Кровать в форме зигзага">
-            <h3>Кровать «Зигзаг удачи»</h3>
-            <p class="desc">Спальное место, которое ломает все стереотипы о сне. Говорят, на ней снятся самые запутанные, но яркие сны.</p>
-            <p class="price">от 150 000 ₽</p>
-          </article>
-
-          <!-- 6 -->
-          <article class="item-card">
-            <img src="images/item-6.jpg" alt="Кресло в виде гориллы">
-            <h3>Кресло «Горилла»</h3>
-            <p class="desc">Мягкое и надёжное убежище в объятиях могучей гориллы. Идеально для интровертов, которые хотят, чтобы их не трогали.</p>
-            <p class="price">от 180 000 ₽</p>
-          </article>
-
-          <!-- 7 -->
-          <article class="item-card">
-            <img src="images/item-7.jpg" alt="Красная тумба в виде оленя">
-            <h3>Тумба «Олень»</h3>
-            <p class="desc">Изящная тумба с двумя ящиками и встроенным торшером вместо рогов. Верный помощник в спальне, который никогда не убежит.</p>
-            <p class="price">от 65 000 ₽</p>
-          </article>
-
-          <!-- 8 -->
-          <article class="item-card">
-            <img src="images/item-8.jpg" alt="Синий столик в виде собаки">
-            <h3>Столик «Верный пёс»</h3>
-            <p class="desc">Синий пёс, готовый держать на своей спине всё, что угодно: от чашки кофе до будильника. Самый преданный предмет интерьера.</p>
-            <p class="price">от 38 000 ₽</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Как мы работаем -->
-    <section class="section section--muted">
-      <div class="container">
-        <h2>Как мы работаем</h2>
-        <div class="process-steps">
-          <div class="step">
-            <span class="step-number">1</span>
-            <h3>Заявка</h3>
-            <p>Вы описываете идею — мы обсуждаем детали и сроки.</p>
-          </div>
-          <div class="step">
-            <span class="step-number">2</span>
-            <h3>Эскиз</h3>
-            <p>Готовим 3D-макет и согласовываем материалы.</p>
-          </div>
-          <div class="step">
-            <span class="step-number">3</span>
-            <h3>Изготовление</h3>
-            <p>Собираем мебель вручную в нашей мастерской.</p>
-          </div>
-          <div class="step">
-            <span class="step-number">4</span>
-            <h3>Доставка</h3>
-            <p>Привозим, собираем и удивляем ваших гостей.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Форма заявки -->
-    <section class="section">
-      <div class="container">
-        <h2>Оставить заявку</h2>
-        <p style="text-align: center; margin-bottom: 30px;">Опишите, какую необычную мебель вы хотите — и мы свяжемся с вами.</p>
-        
-        <form class="order-form" action="#" method="post">
-          <label for="name">Ваше имя</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="idea">Ваша идея</label>
-          <textarea id="idea" name="idea" rows="4" required></textarea>
-
-          <button type="submit">Отправить заявку</button>
-        </form>
       </div>
     </section>
   </main>
